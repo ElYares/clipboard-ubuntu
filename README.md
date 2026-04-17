@@ -62,7 +62,7 @@ clipboard-ubuntu/
 Run directly from the repository:
 
 ```bash
-cd /home/elyarestark/develop/clipboard-ubuntu
+cd repo-git
 chmod +x bin/clipboard-history scripts/install-app.sh
 ./bin/clipboard-history --show
 ```
@@ -83,7 +83,7 @@ Available commands:
 Install to `~/.local`:
 
 ```bash
-cd /home/elyarestark/develop/clipboard-ubuntu
+cd repo-git
 chmod +x scripts/install-app.sh
 ./scripts/install-app.sh
 ```
