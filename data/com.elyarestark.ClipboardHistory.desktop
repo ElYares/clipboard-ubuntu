@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Clipboard History
+Comment=Clipboard manager for Ubuntu GNOME
+Exec=clipboard-history --show
+Icon=edit-paste
+Terminal=false
+Categories=Utility;GTK;
+StartupNotify=true

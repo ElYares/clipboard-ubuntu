@@ -1,0 +1,15 @@
+{
+  "uuid": "clipboard-history@elyarestark",
+  "name": "Clipboard History",
+  "description": "Modern clipboard history for Ubuntu GNOME with a polished floating panel, search, pinning and persistence.",
+  "shell-version": [
+    "46"
+  ],
+  "session-modes": [
+    "user",
+    "ubuntu"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.clipboard-history",
+  "version": 1,
+  "url": "https://example.invalid/clipboard-history"
+}

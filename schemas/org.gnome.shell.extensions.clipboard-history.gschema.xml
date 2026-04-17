@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.clipboard-history"
+          path="/org/gnome/shell/extensions/clipboard-history/">
+    <key name="toggle-panel" type="as">
+      <default><![CDATA[['<Super>v']]]></default>
+      <summary>Shortcut to open the clipboard panel</summary>
+    </key>
+    <key name="max-history-size" type="i">
+      <default>60</default>
+      <summary>Maximum number of stored history items</summary>
+    </key>
+    <key name="enable-persistence" type="b">
+      <default>true</default>
+      <summary>Persist clipboard items across restarts</summary>
+    </key>
+    <key name="enable-images" type="b">
+      <default>true</default>
+      <summary>Capture image clipboard content when possible</summary>
+    </key>
+    <key name="enable-blur" type="b">
+      <default>true</default>
+      <summary>Enable background blur in the panel when possible</summary>
+    </key>
+    <key name="session-only" type="b">
+      <default>false</default>
+      <summary>Keep history only for the current session</summary>
+    </key>
+    <key name="capture-enabled" type="b">
+      <default>true</default>
+      <summary>Capture clipboard changes</summary>
+    </key>
+    <key name="exclude-sensitive" type="b">
+      <default>true</default>
+      <summary>Try to skip passwords and other sensitive content</summary>
+    </key>
+    <key name="max-text-length" type="i">
+      <default>12000</default>
+      <summary>Maximum text size to capture</summary>
+    </key>
+    <key name="max-image-bytes" type="i">
+      <default>3145728</default>
+      <summary>Maximum image payload size to capture</summary>
+    </key>
+    <key name="panel-width" type="i">
+      <default>760</default>
+      <summary>Preferred panel width</summary>
+    </key>
+    <key name="panel-height" type="i">
+      <default>640</default>
+      <summary>Preferred panel height</summary>
+    </key>
+    <key name="panel-position" type="s">
+      <default>'center'</default>
+      <summary>Panel position on screen</summary>
+    </key>
+    <key name="poll-interval-ms" type="i">
+      <default>700</default>
+      <summary>Clipboard polling interval in milliseconds</summary>
+    </key>
+    <key name="excluded-patterns" type="as">
+      <default><![CDATA[['BEGIN PGP', 'PRIVATE KEY', 'otp', '2fa code']]]></default>
+      <summary>List of simple text patterns to skip</summary>
+    </key>
+    <key name="shortcut-behavior" type="s">
+      <default>'toggle'</default>
+      <summary>How the global shortcut behaves</summary>
+    </key>
+    <key name="dark-theme" type="b">
+      <default>true</default>
+      <summary>Use dark visual style</summary>
+    </key>
+  </schema>
+</schemalist>
