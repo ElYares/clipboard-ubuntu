@@ -41,24 +41,15 @@ class MainWindow extends Adw.ApplicationWindow {
         });
         root.append(header);
 
-        const titleBox = new Gtk.Box({
-            orientation: Gtk.Orientation.VERTICAL,
-            spacing: 2,
-            margin_top: 8,
-            margin_bottom: 8,
-        });
-        header.set_title_widget(titleBox);
-
         const title = new Gtk.Label({label: 'Clipboard History'});
-        title.add_css_class('title-1');
-        titleBox.append(title);
+        title.add_css_class('app-title');
+        header.set_title_widget(title);
 
         this._statusLabel = new Gtk.Label({
-            xalign: 0.5,
+            xalign: 0,
             label: 'Background service starting…',
         });
         this._statusLabel.add_css_class('dim-label');
-        titleBox.append(this._statusLabel);
 
         const settingsButton = new Gtk.Button({
             icon_name: 'emblem-system-symbolic',
@@ -76,11 +67,11 @@ class MainWindow extends Adw.ApplicationWindow {
 
         const body = new Gtk.Box({
             orientation: Gtk.Orientation.VERTICAL,
-            spacing: 14,
-            margin_top: 18,
-            margin_bottom: 18,
-            margin_start: 18,
-            margin_end: 18,
+            spacing: 12,
+            margin_top: 14,
+            margin_bottom: 14,
+            margin_start: 14,
+            margin_end: 14,
         });
         root.append(body);
 
@@ -91,6 +82,7 @@ class MainWindow extends Adw.ApplicationWindow {
         });
         hero.add_css_class('hero-text');
         body.append(hero);
+        body.append(this._statusLabel);
 
         const controls = new Gtk.Box({
             orientation: Gtk.Orientation.HORIZONTAL,

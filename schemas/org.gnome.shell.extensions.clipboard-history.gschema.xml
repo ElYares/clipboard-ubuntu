@@ -43,11 +43,11 @@
       <summary>Maximum image payload size to capture</summary>
     </key>
     <key name="panel-width" type="i">
-      <default>760</default>
+      <default>600</default>
       <summary>Preferred panel width</summary>
     </key>
     <key name="panel-height" type="i">
-      <default>640</default>
+      <default>830</default>
       <summary>Preferred panel height</summary>
     </key>
     <key name="panel-position" type="s">

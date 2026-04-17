@@ -13,6 +13,6 @@ export const DEFAULT_CONFIG = {
     maxImageBytes: 3145728,
     pollIntervalMs: 700,
     excludedPatterns: ['BEGIN PGP', 'PRIVATE KEY', 'otp', '2fa code'],
-    panelWidth: 760,
-    panelHeight: 720,
+    panelWidth: 600,
+    panelHeight: 830,
 };

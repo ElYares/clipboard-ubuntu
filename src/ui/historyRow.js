@@ -25,11 +25,11 @@ class HistoryRow extends Gtk.ListBoxRow {
     _buildContent() {
         const box = new Gtk.Box({
             orientation: Gtk.Orientation.HORIZONTAL,
-            spacing: 14,
-            margin_top: 14,
-            margin_bottom: 14,
-            margin_start: 14,
-            margin_end: 14,
+            spacing: 12,
+            margin_top: 12,
+            margin_bottom: 12,
+            margin_start: 12,
+            margin_end: 12,
         });
 
         if (this.item.type === 'image')
@@ -37,7 +37,7 @@ class HistoryRow extends Gtk.ListBoxRow {
 
         const contentBox = new Gtk.Box({
             orientation: Gtk.Orientation.VERTICAL,
-            spacing: 8,
+            spacing: 6,
             hexpand: true,
         });
         box.append(contentBox);
@@ -98,8 +98,8 @@ class HistoryRow extends Gtk.ListBoxRow {
             const texture = Gdk.Texture.new_from_bytes(base64ToBytes(this.item.imageData));
             return new Gtk.Picture({
                 paintable: texture,
-                width_request: 112,
-                height_request: 112,
+                width_request: 96,
+                height_request: 96,
                 content_fit: Gtk.ContentFit.COVER,
             });
         } catch (error) {

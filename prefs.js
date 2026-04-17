@@ -8,7 +8,7 @@ export default class ClipboardHistoryPreferences extends ExtensionPreferences {
         const settings = this.getSettings();
 
         window.set_title('Clipboard History Preferences');
-        window.set_default_size(760, 720);
+        window.set_default_size(600, 830);
 
         const general = new Adw.PreferencesPage({
             title: 'General',
